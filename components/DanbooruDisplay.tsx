@@ -26,8 +26,10 @@ const DanbooruDisplay = ({image}: DanbooruDisplayProps) => {
                         <Image
                             src={img.preview_file_url}
                             alt={"Image " + img.id}
-                            width={img.image_width}
-                            height={img.image_height}
+                            // width={img.image_width}
+                            // height={img.image_height}
+                            width={1000}
+                            height={1000}
                             quality={100}
                         />
                         <p>Artist: {img.tag_string_artist || 'Unknown'}</p>
