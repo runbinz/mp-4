@@ -15,7 +15,7 @@ export default async function getSafebooruImage(tag: string) {
         }
 
         const timestamp = new Date().getTime();
-        const url = `https://safebooru.donmai.us/posts.json?tags=${encodedTag}&limit=5&order=random&_${timestamp}`;
+        const url = `https://safebooru.donmai.us/posts.json?tags=${encodedTag}&limit=6&order=random&_${timestamp}`;
 
         const response = await fetch(url, {
             headers: headers,
